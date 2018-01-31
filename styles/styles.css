@@ -13,19 +13,8 @@ main {
   margin: auto;
 }
 
-header {
-  padding: 10px;
-  font-size: 2em;
-  color: white;
-  background-color: #333;
-}
 
-.logo {
-  height: 50px;
-  margin-right: 20px;
-}
-
-.leading {
+.cover {
   height: 340px;
   /*  margin-bottom: 30px;*/
   padding: 30px;
@@ -36,44 +25,19 @@ header {
   text-shadow: 0px 0px 5px #000;
 }
 
-.leading-bigtext {
-  /*  margin-right: 60px;*/
+.cover-bigtext {
   font-weight: bold;
+  font-size: 3rem;
   /*    font-size: 24vw;*/
 }
 
+/*
 @media (min-width: 700px) {
-  .leading-bigtext {
+  .cover-bigtext {
     font-size: 3rem;
-  }
-}
+  }*/
 
-.leading-text {
-  max-width: 900px;
-  font-size: 1.2em;
-  line-height: 1.4em;
-}
-
-
-article {
-  position: relative;
-}
-
-.article-img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.article-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-hr {
+.hr-cover {
   margin: 0;
   padding: 0;
   border: 3px solid #706e6e;
@@ -87,9 +51,24 @@ hr {
   border-radius: 0;
 }
 
-footer {
-  display: flex;
-  padding: 1em;
+a {
+  text-decoration: none;
+  display: inline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer styles -------------------------------------------------*/
+
+.footer-spec {
   margin: auto;
   font-size: 1rem;
   color: #fff;
@@ -97,13 +76,63 @@ footer {
   background-color: #242424;
 }
 
-footer section {
-  width: 50%;
+.footer-info {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin: auto;
+}
+
+.footer-info section {
+  margin: 1rem;
+}
+
+.footer-info2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin: auto;
+}
+
+.footer-info2 section {
+  margin: 1rem;
+  margin-right: 5rem;
+}
+
+.footer-infobottom {
+  width: 100%;
+  background-color: #716e6e;
+  display: flex;
+  padding-top: .50rem;
+  padding-bottom: .50rem;
+  justify-content: space-between;
+}
+
+.hr-dashed {
+  border-top: 1px dashed #8c8b8b;
+  padding: 0;
+  margin: auto;
+  width: 90%;
+}
+
+.footer-info h5 {
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.footer-info p {
+  display: flex;
+  font-size: 1rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
 }
 
 .backtotop {
   text-align: right;
-  padding-right: 2em;
+  padding-right: 2rem;
 
 }
 
@@ -116,12 +145,12 @@ footer section {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
+.footer-ul {
+  line-height: 120%;
 }
 
-a:hover {
-  text-decoration: underline;
+.socialmedia i {
+  padding-right: .5em;
 }
 
 
@@ -133,7 +162,7 @@ header {
 }
 
 @media (min-width: 700px) {
-  .leading {
+  .cover {
     display: flex;
     align-items: center;
   }
@@ -213,9 +242,21 @@ header {
 }
 
 .filter-hr {
-  border: 0;
-  border-top: 1px solid #8c8c8c;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid #8c8b8b;
+  margin-top: .50rem;
+}
+
+.dresspage-title .filter-H1 {
+  float: left;
+}
+
+.dresssort {
+  float: right;
+}
+
+input-checkbox {
+  display: none;
+  border: 1px solid #333;
 }
 
 /*Dress module styles----------------------------------------------*/
@@ -227,14 +268,24 @@ header {
   /*  margin: .50em*/
 }
 
+.dressmodule-h5 {
+  font-size: 1rem;
+  padding: .25rem;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.dressmodule-p {
+  font-size: 1rem;
+  padding: .25rem;
+  color: #333;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .dressmodule a img {
   width: 80%;
   align-content: center;
-}
-
-.dressmodule p {
-  padding: .25rem;
-  margin: 0;
 }
 
 .swatch {
@@ -335,6 +386,11 @@ header {
   height: 16px;
   border-radius: 12px;
   background-color: #dbdbdb;
+}
+
+.rating a {
+  font-size: .75rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .ratingyellow {

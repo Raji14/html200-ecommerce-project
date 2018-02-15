@@ -51,3 +51,18 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+
+
+
+
+
+//For responsive images
+$("<div />", {
+  class: 'vw-line',
+  html: "Viewport Width: <span id='vw'></span>"
+}).prependTo("body");
+
+var vwDisplay = $("#vw");
+$(window).on("resize", function () {
+  vwDisplay.text($(this).width());
+}).resize();

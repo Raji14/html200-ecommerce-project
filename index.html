@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="https://use.fontawesome.com/bef7ad5d00.js"></script>
   <script src="js/script.js" defer></script>
@@ -43,7 +44,7 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="active dropdown">
+          <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WOMEN<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Activewear</a></li>
@@ -67,10 +68,8 @@
               <li><a href="#">T-shirts</a></li>
             </ul>
           </li>
-
           <li>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME & GIFTS </a>
-
           </li>
           <li><a href="#">SALE</a></li>
         </ul>
@@ -81,409 +80,79 @@
       </div>
     </div>
   </nav>
+
+  <!-- Top cover image section -->
   <section class="cover">
-    <p class="cover-bigtext">Can't miss Clearance! Upto 70% off!</p>
+    <div class="cover-bigtext">
+      <p>Spring/Summer '18 runway-inspired styles are hitting the shop floors right now. </p>
+      <p>Meet your new-season classics (at every price point).</p>
+    </div>
   </section>
   <hr class="hr-cover">
+
   <!--    Main content starts here-->
   <main>
-    <!--Breadcrumbs-->
-    <ol class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Women</a></li>
-      <li class="active">Dresses</li>
-    </ol>
-    <!--Product catalog/Filter-->
-    <section class="Grid">
-      <!--    Left filter section -->
-      <section class="Grid-row">
-        <section class="filterColumn">
-          <h1 class="filter-H1">Filter by</h1>
-          <hr class="filter-hr">
-          <label class="filter-H2">Occasion</label>
-          <section class="expand">
-            <input type="checkbox" name="occ1" id="occ1" class="input-checkbox">
-            <label for="occ1">Casual</label>
-          </section>
-          <section class="category">
-            <input type="checkbox" class="filterinput" name="occasionfilter[]" id="occ2">
-            <label for="occ2">Daytime</label>
-          </section>
-          <section class="category">
-            <input type="checkbox" class="filterinput" name="occasionfilter[]" id="occ3">
-            <label for="occ3">Formal</label>
-          </section>
-          <section class="category">
-            <input type="checkbox" class="filterinput" name="occasionfilter[]" id="occ4">
-            <label for="occ4">Night Out</label>
-          </section>
-          <section class="category">
-            <input type="checkbox" class="filterinput" name="occasionfilter[]" id="occ5">
-            <label for="occ5">Party</label>
-          </section>
-          <section class="category">
-            <input type="checkbox" class="filterinput" name="occasionfilter[]" id="occ6">
-            <label for="occ6">Prom</label>
-          </section>
-          <section class="category">
-            <input type="checkbox" class="filterinput" name="occasionfilter[]" id="occ7">
-            <label for="occ7">Wear To Work</label>
-          </section>
-        </section>
-        <section class="filterColumn">
-          <hr class="filter-hr">
-          <label class="filter-H2">Brand</label>
-          <section class="brand">
-            <input type="checkbox" class="filterinput" name="brandfilter[]" id="brand1">
-            <label for="brand1">Adrianna Papell</label>
-          </section>
-          <section class="brand">
-            <input type="checkbox" class="filterinput" name="brandfilter[]" id="brand2">
-            <label for="brand2">American Living</label>
-          </section>
-          <section class="brand">
-            <input type="checkbox" class="filterinput" name="brandfilter[]" id="brand3">
-            <label for="brand3">Bar III</label>
-          </section>
-          <section class="brand">
-            <input type="checkbox" class="filterinput" name="brandfilter[]" id="brand4">
-            <label for="brand4">Calvin Klein</label>
-          </section>
-          <section class="brand">
-            <input type="checkbox" class="filterinput" name="brandfilter[]" id="brand5">
-            <label for="brand5">INC International Concepts</label>
-          </section>
-          <section class="brand">
-            <input type="checkbox" class="filterinput" name="brandfilter[]" id="brand6">
-            <label for="brand6">Lauren Ralph Lauren</label>
-          </section>
-          <section class="brand">
-            <input type="checkbox" class="filterinput" name="brandfilter[]" id="brand7">
-            <label for="brand7">Michael Kors</label>
-          </section>
-        </section>
-        <section class="filterColumn">
-          <hr class="filter-hr">
-          <label class="filter-H2">Size</label>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size1">
-            <label for="size1">One Size</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size2">
-            <label for="size2">00 XXS</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size3">
-            <label for="size3">0 XS</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size4">
-            <label for="size4">2 S</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size5">
-            <label for="size5">4 S</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size6">
-            <label for="size6">6 M</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size8">
-            <label for="size8">8 M</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size9">
-            <label for="size9">10 M</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size10">
-            <label for="size10">12 L</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size11">
-            <label for="size11">14 XL</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size12">
-            <label for="size12">16 XL</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size13">
-            <label for="size13">16 XL</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id="size14">
-            <label for="size14">18 XXL</label>
-          </section>
-          <section class="size">
-            <input type="checkbox" class="filterinput" name="sizefilter[]" id=size15>
-            <label for="size15">20 XXL</label>
-          </section>
-          <hr class="filter-hr">
-        </section>
-      </section>
-      <section class="paddingBlock">
-        <section class="dresspage-title group">
-          <h1 class="filter-H1">Dresses</h1>
-          <form class="dresssort">
-            <select name="sort">
-              <option value="featured">Sort by featured</option>
-              <option value="newest">Sort by newest</option>
-              <option value="pricelow">Sort by price: low to high</option>
-              <option value="pricehigh">Sort by price: high to low</option>
-                         <option value="sale">Sort by sale</option>
-              <option value="rating">Sort by customer rating</option>
-            </select>
-          </form>
-        </section>
 
-        <section class="equalHMWrap eqWrap">
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/100406241.jpg" alt="dress1"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="red"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="black"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="blue"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="green"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Morgan & Co Lace Gown</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star-half-o ratingyellow"></i><a href="dress1.html">(24)</a>
-              </section>
-            </section>
+    <!--    Promo section 1-->
+    <h2 class="home-h2">What's on now!</h2>
+    <hr class="home-hr-style2">
+
+    <div class="layout">
+      <div class="child">
+        <section class="home-AdvtUnit">
+          <section>
+            <img src="images/pexels-photo-298863-400.jpg" srcset="images/pexels-photo-298863-1024.jpg 1024w, images/pexels-photo-298863-800.jpg 800w, images/pexels-photo-298863-400.jpg 400w" sizes="(max-width: 800px) 400px, (max-width: 1700px) 800px, (min-width: 2400px) 1024px">
           </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101032102.jpg" alt="dress2"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="nude"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="pink"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="orange"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="red2"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Bardot 'Solange' Off the Shoulder Midi Dress</h5>
-              </a>
-              <p class="dressmodule-p">$119.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(178)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101226013.jpg" alt="dress3"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="red2"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="orange"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="nude"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="blue2"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Chelsea Off the Shoulder Dress</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(21)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101592118.jpg" alt="dress4"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="black"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="orange"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="red2"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="pink"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Eliza Fit & Flare Sweater Dress</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(43)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101277184.jpg" alt="dress5"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="peach"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="black"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="red2"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="pink"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Andrea Fit & Flare</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(59)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101364203.jpg" alt="dress6"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="nude"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="green"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="black"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="red2"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Leith Ruched Body-Con Tank Dress</h5>
-              </a>
-              <p class="dressmodule-p">$119.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(203)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101474496.jpg" alt="dress7"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="red"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="pink"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="nude"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="blue2"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Gemma Halter Lace Sheath Dress</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star-half-o ratingyellow"> </i>
-                <i class="fa fa-star fa=fw ratinggray"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(16)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/11812548.jpg" alt="dress8"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="gray"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="green"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="orange"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="black"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Emery Midi Dress</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star-half-o ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(12)</a>
-              </section>
-            </section>
+          <section class="asideContent ">
+            <h5 class="asideContent-h5">rag & bone Spring 2018</h5>
+            <p>Explore the NYC brand's inventive new collection, where British schoolboy tailoring and sporty lines meet unexpected flashes of punchy color. </p>
+            <p>rag & bone: <a href="womenDresses.html">Women</a> | <a href="">Men</a> </p>
+            <p>Read More</p>
           </section>
         </section>
-      </section>
-    </section>
+      </div>
+      <div class="child">
+        <section class="home-AdvtUnit">
+          <section>
+            <img src="images/pexels-photo-271676-400.jpg" srcset="images/pexels-photo-271676-1024.jpg 1024w, images/pexels-photo-271676-800.jpg 800w, images/pexels-photo-271676-400.jpg 400w" sizes="(max-width: 800px) 400px, (max-width: 1700px) 800px, (min-width: 2400px) 1024px">
+          </section>
+          <section class="asideContent ">
+            <h5 class="asideContent-h5">rag & bone Spring 2018</h5>
+            <p>Explore the NYC brand's inventive new collection, where British schoolboy tailoring and sporty lines meet unexpected flashes of punchy color. </p>
+            <p>rag & bone: <a href="womenDresses.html">Women</a> | <a href="">Men</a> </p>
+            <p>Read More</p>
+          </section>
+        </section>
+      </div>
+      <!--      <div class="child">a</div>-->
+    </div>
+
+
+
+    <!--    Promo section 2-->
+    <h2 class="home-h2">New Arrivals</h2>
+    <hr class="home-hr-style2">
+    <div class="home-newarrivals">
+      <div>
+        <a href="dress1.html"><img src="images/11812548.jpg" alt="dress8" class="home-promodressImg"></a>
+      </div>
+      <div>
+        <a href="dress1.html"><img src="images/101474496.jpg" alt="dress7" class="home-promodressImg"></a>
+      </div>
+      <div>
+        <a href="dress1.html"><img src="images/101226013.jpg" alt="dress3" class="home-promodressImg"></a>
+      </div>
+      <div>
+        <a href="dress1.html"><img src="images/101032102.jpg" alt="dress2" class="home-promodressImg"></a>
+      </div>
+      <div>
+        <a href="dress1.html"><img src="images/11812548.jpg" alt="dress8" class="home-promodressImg"></a>
+      </div>
+
+    </div>
+
   </main>
+
   <!-- Footer here -->
   <footer class="footer-spec">
     <section class="footer-info">

@@ -34,11 +34,11 @@ main {
   color: white;
 }
 
-.home-h2 {
+.home-h1 {
   font-size: 1rem;
-  font-weight: bold;
+  color: #333;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
   padding-top: .50rem;
   padding-bottom: .50rem;
 }
@@ -75,14 +75,22 @@ main {
   display: flex;
   flex-direction: column;
   /*  width: 100%;*/
-  margin: 1rem;
+  margin: 1rem 0;
+}
+
+.home-AdvtUnit img {
+  width: 100%;
 }
 
 .asideContent {
-  background-color: #333333;
+  background-color: #706e6e;
   border: 1px solid #000;
   color: #fff;
   padding: 1rem;
+}
+
+.asideContent a {
+  color: #000;
 }
 
 .asideContent-h5 {
@@ -101,7 +109,7 @@ main {
 }
 
 .home-promodressImg {
-  width: 50%;
+  width: 70%;
 }
 
 
@@ -241,7 +249,6 @@ header {
 }
 
 .Grid-cell {
-  /*  flex: 1;*/
   display: flex;
   flex-wrap: wrap;
   width: 80%
@@ -255,7 +262,6 @@ header {
 }
 
 .paddingBlock {
-  /*  padding: 1.6rem 0;*/
   width: 80%;
 }
 
@@ -266,14 +272,6 @@ header {
 
 .eq {
   padding: 0.85rem;
-}
-
-.eq:nth-of-type(odd) {
-  /*  background: yellow;*/
-}
-
-.eq:nth-of-type(even) {
-  /*  background: lightblue;*/
 }
 
 .equalHMWrap {
@@ -331,8 +329,7 @@ input-checkbox {
   width: 100%;
   padding: 30px;
   color: white;
-  background-image: url("../images/pexels-photo-555787.jpg");
-  background-size: cover;
+  background-image: url("../images/pexels-photo-555787.jpeg");
   background-repeat: no-repeat;
 
 }

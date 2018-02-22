@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="https://use.fontawesome.com/bef7ad5d00.js"></script>
   <script src="js/script.js" defer></script>
@@ -73,10 +74,11 @@
   </nav>
 
   <!-- Top cover image section -->
-  <section class="cover">
+  <section class="signin-Pagecover">
     <div class="cover-bigtext">
-      <p>Spring/Summer '18 runway-inspired styles are hitting the shop floors right now. </p>
-      <p>Meet your new-season classics (at every price point).</p>
+      <p>Enjoy faster checkout!</p>
+      <p>Know your info is stored securely for every order.</p>
+      <p>Enjoy 25% your next purchase!</p>
     </div>
   </section>
   <hr class="hr-cover">
@@ -84,59 +86,36 @@
   <!--    Main content starts here-->
   <main>
 
+
     <!--    Promo section 1-->
-    <h1 class="home-h1">What's on now!</h1>
+    <h1 class="home-h1">Sign Up</h1>
     <hr class="home-hr-style2">
 
-    <div class="layout">
-      <div class="child">
-        <section class="home-AdvtUnit">
-          <section>
-            <img src="images/pexels-photo-298863-400.jpg" srcset="images/pexels-photo-298863-1024.jpg 1024w, images/pexels-photo-298863-800.jpg 800w, images/pexels-photo-298863-400.jpg 400w" sizes="(max-width: 800px) 400px, (max-width: 1700px) 800px, (min-width: 2400px) 1024px" alt="Spring 2018">
-          </section>
-          <section class="asideContent">
-            <h5 class="asideContent-h5">Jack & Jill Spring 2018</h5>
-            <p>Explore the NYC brand's inventive new collection, where British schoolboy tailoring and sporty lines meet unexpected flashes of punchy color. </p>
-            <p>Jack & Jill: <a href="womenDresses.html">Women</a> | <a href="">Men</a> </p>
-            <p>Read More...</p>
-          </section>
+    <section class="formsection">
+      <p>We'll email you an EXTRA 25% OFF your next purchase!</p><br>
+      <form name="custInfo" onsubmit="capture()">
+        <section>
+          <label for="firstname" class="signuplabel">First Name:</label>
+          <input type="text" id="firstname" name="userFirstname" required>
         </section>
-      </div>
-      <div class="child">
-        <section class="home-AdvtUnit">
-          <section>
-            <img src="images/pexels-photo-271676-400.jpg" srcset="images/pexels-photo-271676-1024.jpg 1024w, images/pexels-photo-271676-800.jpg 800w, images/pexels-photo-271676-400.jpg 400w" sizes="(max-width: 800px) 400px, (max-width: 1700px) 800px, (min-width: 2400px) 1024px" alt="Big Home Decor Sale">
-          </section>
-          <section class="asideContent">
-            <h5 class="asideContent-h5">The Big Home Decor Sale</h5>
-            <p>From modern to global-eclectic, you will love our curated styles for your indoor and outdoor spaces.</p>
-            <p><a href="">Living Room</a> | <a href="">Bedroom</a> | <a href="">Bath</a> | <a href="">Dining</a></p>
-
-            <p>Read More...</p>
-          </section>
+        <section>
+          <label for="lastname" class="signuplabel">Last Name:</label>
+          <input type="text" id="lastname" name="userLastname" required>
         </section>
-      </div>
-    </div>
-
-    <!--    Promo section 2-->
-    <h1 class="home-h1">New Arrivals</h1>
-    <hr class="home-hr-style2">
-    <section class="home-newarrivals">
-      <section>
-        <a href="womenDresses.html"><img src="images/11812548.jpg" alt="dress1" class="home-promodressImg"></a>
-      </section>
-      <section>
-        <a href="womenDresses.html"><img src="images/101474496.jpg" alt="dress2" class="home-promodressImg"></a>
-      </section>
-      <section>
-        <a href="womenDresses.html"><img src="images/101226013.jpg" alt="dress3" class="home-promodressImg"></a>
-      </section>
-      <section>
-        <a href="womenDresses.html"><img src="images/101032102.jpg" alt="dress4" class="home-promodressImg"></a>
-      </section>
-      <section>
-        <a href="womenDresses.html"><img src="images/101714547.jpg" alt="dress5" class="home-promodressImg"></a>
-      </section>
+        <section>
+          <label for="mail" class="signuplabel">E-mail:</label>
+          <input type="email" id="mail" name="userEmail" required>
+        </section>
+        <section>
+          <label for="password" class="signuplabel">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </section>
+        <section>
+          <label for="confirmpassword" class="signuplabel">Confirm Password:</label>
+          <input type="password" id="confirmpassword" name="confirmpassword" required>
+        </section>
+        <input type="submit" class="signupbutton">
+      </form>
     </section>
   </main>
 
@@ -232,14 +211,15 @@
     </section>
     <section class="footer-infobottom">
       <div> &copy; 2018 || R I A<i class="fa fa-pagelines" aria-hidden="true"></i></div>
-      <div class="backtotop"><a href="index.html" target="_self">Back to <i class="fa fa-arrow-circle-up fa-1x"></i></a></div>
+      <div class="backtotop"><a href="signin.html" target="_self">Back to <i class="fa fa-arrow-circle-up fa-1x"></i></a></div>
     </section>
   </footer>
+  <script src="js/form-handler.js"></script>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--  <script src="js/bootstrap.min.js"></script>-->
+  <!--<script src="js/bootstrap.min.js"></script>-->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

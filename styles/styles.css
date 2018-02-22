@@ -20,7 +20,6 @@ main {
   height: 340px;
   width: 100%;
   padding: 30px;
-  color: white;
   background-image: url("../images/pexels-photo-206470-1024.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,10 +27,11 @@ main {
 }
 
 .cover-bigtext {
-  float: right;
+  /*  float: right;*/
   font-weight: bold;
   font-size: 1rem;
-  color: white;
+  color: #ffffff;
+  padding-top: 2rem;
 }
 
 .home-h1 {
@@ -137,6 +137,61 @@ a:hover {
   display: table;
   clear: both;
 }
+
+.InnerPagecover {
+  height: 340px;
+  width: 100%;
+  padding: 30px;
+  background-image: url("../images/pexels-photo-555787.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signin-Pagecover {
+  height: 340px;
+  width: 100%;
+  padding: 30px;
+  background-image: url("../images/pexels-photo-821415.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*Sign up form styles*/
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  width: 20%;
+  /*  padding: 2rem;*/
+  margin-left: 1rem;
+  margin-top: 1rem;
+  /*  margin: 5px 0 22px 0;*/
+  display: inline-block;
+  border: 1px solid #cccccc;
+  background: #f1f1f1;
+}
+
+.signuplabel {
+  width: 15%;
+  margin-top: 1rem;
+}
+
+.formsection {
+  margin-top: 1rem;
+}
+
+.signupbutton {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: .25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 37%;
+  height: 2rem;
+}
+
 
 /* Footer styles -------------------------------------------------*/
 
@@ -323,16 +378,6 @@ input-checkbox {
 }
 
 /*Dress module styles----------------------------------------------*/
-
-.InnerPagecover {
-  height: 340px;
-  width: 100%;
-  padding: 30px;
-  color: white;
-  background-image: url("../images/pexels-photo-555787.jpeg");
-  background-repeat: no-repeat;
-
-}
 
 .dressmodule {
   /*  flex: 1;*/

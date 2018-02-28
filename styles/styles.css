@@ -29,7 +29,7 @@ main {
 .cover-bigtext {
   /*  float: right;*/
   font-weight: bold;
-  font-size: 1rem;
+  n font-size: 1rem;
   color: #ffffff;
   padding-top: 2rem;
 }
@@ -223,7 +223,7 @@ input[type=password] {
 
 .footer-info2 section {
   margin: 1rem;
-  margin-right: 5rem;
+  /*  margin-right: 5rem;*/
 }
 
 .footer-infobottom {
@@ -288,12 +288,14 @@ header {
   align-items: center;
 }
 
+/*
 @media (min-width: 700px) {
   .cover {
     display: flex;
     align-items: center;
   }
 }
+*/
 
 /* Grid styles -------------------------------------------------*/
 
@@ -517,4 +519,77 @@ input-checkbox {
 
 .ratinggray {
   color: #b8b8b8;
+}
+
+
+/*Media queries ----------------------------------------------*/
+
+@media all and (max-width: 770px) {
+  /*  Women dresses page*/
+  .Grid-row {
+    display: none;
+  }
+  .swatch {
+    display: none;
+  }
+
+}
+
+@media all and (max-width: 500px) {
+  /*  Index page*/
+  .layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*  grid-gap: .20rem;*/
+  }
+  .home-newarrivals {
+    display: block;
+    padding-top: .20rem;
+    padding-bottom: .20rem;
+
+  }
+
+  .home-promodressImg {
+    width: 70%;
+  }
+
+  /*  Women Dresses page*/
+  .swatch {
+    display: none;
+  }
+  .rating {
+    display: none;
+  }
+  .Grid-row {
+    display: none;
+  }
+  .InnerPagecover {
+    background-image: url("../images/pexels-photo-555787.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .cover-bigtext {
+    display: none;
+  }
+
+  .equalHM {
+    width: 100%;
+  }
+
+  .footer-info {
+    display: block;
+    margin: auto;
+  }
+  .footer-info section {
+    margin: 0;
+  }
+  .footer-info p {
+    display: none;
+  }
+
+  .footer-info2 {
+    display: none;
+  }
 }

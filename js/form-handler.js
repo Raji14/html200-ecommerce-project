@@ -6,5 +6,5 @@ function capture() {
   var lastName = document.custInfo.userLastname.value;
   var eMail = document.custInfo.userEmail.value;
   console.log(firstName, lastName, eMail);
-  console.log("Thank you " + firstName + " " + lastName + "for signing up. Look for exciting offers in your inbox!");
+  console.log("Thank you " + firstName + " " + lastName + " for signing up. Look for exciting offers in your inbox!");
 }

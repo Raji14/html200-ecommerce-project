@@ -69,10 +69,10 @@ function updateCart(productUpdater) {
 //Swap button image between + or - on click
 function changeImage(productUpdater, plus) {
   if (plus) {
-    productUpdater.src = "/images/plus.png";
+    productUpdater.src = "../images/plus.png";
     productUpdater.alt = "Add";
   } else {
-    productUpdater.src = "/images/minus.png";
+    productUpdater.src = "../images/minus.png";
     productUpdater.alt = "Remove";
   }
 }

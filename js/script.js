@@ -1,68 +1,86 @@
 // As an extra challenge, you can build the product listings
 // by looping over this array and creating HTML for each element.
 // This will be best accomplished after we do lesson 09.
+
+
 var products = [
-  {
-    "name": "Reversible Plaid",
-    "price": 26.99,
-    "description": "Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.",
-    "imageTitle": "reversible-plaid.jpg"
-  },
-  {
-    "name": "Wool Cable Knit",
-    "price": 49.99,
-    "description": "Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.",
-    "imageTitle": "wool-cable.jpeg"
-  },
-  {
-    "name": "Northern Lights",
-    "price": 29.99,
-    "description": "Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.",
-    "imageTitle": "northern-lights.jpg"
-  },
-  {
-    "name": "Ombre Infinity",
-    "price": 11.99,
-    "description": "A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.",
-    "imageTitle": "ombre-infinity.jpg"
-  },
-  {
-    "name": "Fringed Plaid",
-    "price": 18.99,
-    "description": "Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.",
-    "imageTitle": "fringed-plaid.jpeg"
-  },
-  {
-    "name": "Multi Color",
-    "price": 22.99,
-    "description": "The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic",
-    "imageTitle": "multi-color.jpeg"
-  },
-  {
-    "name": "Etro Paisley-Print Silk",
-    "price": 249.99,
-    "description": "Luxurious silk scarf with subtle paisley pattern. 100% silk",
-    "imageTitle": "etro.png"
-  },
-  {
-    "name": "Ashby Twill",
-    "price": 70.99,
-    "description": "Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool",
-    "imageTitle": "twill.jpg"
-  }
+  "Morgan & Co Lace Gown",
+  "Bardot Solange Off the Shoulder Midi Dress",
+  "Chelsea Off the Shoulder Dress",
+  "Eliza Fit & Flare Dress",
+  "Andrea Fit & Flare Dress",
+  "Leith Ruched Bodycon Dress",
+  "Gemma Halter Lace Sheath Dress",
+  "Emery Midi Dress"
 ]
 
+var cart = [];
 
+// Add click handlers for each product
+console.log('Adding click handlers...')
 
+// Get each of the product updater elements (i.e. the -/+ icons) by class name.
+var productUpdaters = document.getElementsByClassName("product-cart-adder");
 
+// Iterate over each of the updaters, and add a click event handler to each.
+for (var i = 0; i < productUpdaters.length; i++) {
 
-//For responsive images
-$("<div />", {
-  class: 'vw-line',
-  html: "Viewport Width: <span id='vw'></span>"
-}).prependTo("body");
+  // Add a click event listener to the ith productUpdater.
+  // On click the function 'updateCartOnClick' will be called.
+  productUpdaters[i].addEventListener('click', updateCartOnClick);
+}
 
-var vwDisplay = $("#vw");
-$(window).on("resize", function () {
-  vwDisplay.text($(this).width());
-}).resize();
+// Find the product for the given updater element.
+function findProduct(productUpdater) {
+  // Grab the value of the 'data-product-id' attribute.
+  return productUpdater.getAttribute('data-product-id')
+}
+
+// Click handler. Called on click.
+// 'e' is the event.
+function updateCartOnClick(e) {
+  event.preventDefault();
+  // Find the product being clicked and call updateCart
+  updateCart(e.target);
+}
+
+// For a given product, update the cart.
+function updateCart(productUpdater) {
+  var product = findProduct(productUpdater);
+
+  // Find the product in the cart if it exists.
+  var i = cart.indexOf(product);
+
+  if (i == -1) {
+    // Push, append, the product to the cart increasing the length by 1.
+    cart.push(product);
+    changeImage(productUpdater, false);
+    console.log('Added ' + product + ' to the cart.');
+  } else {
+    // Remove the element at index 'i' from the cart decreasing the length by 1.
+    cart.splice(i, 1);
+    changeImage(productUpdater, true);
+    console.log('Removed ' + product + ' from the cart.');
+  }
+  // Log the new cart length (i.e. number of items in the cart) after adding or removing the product.
+  console.log('Cart has ' + cart.length + ' item(s).');
+}
+
+//Swap button image between + or - on click
+function changeImage(productUpdater, plus) {
+  if (plus) {
+    productUpdater.src = "/images/plus.png";
+    productUpdater.alt = "Add";
+  } else {
+    productUpdater.src = "/images/minus.png";
+    productUpdater.alt = "Remove";
+  }
+}
+
+//Click function on Cart Link to console log number of items in cart 
+function itemsInCart() {
+  event.preventDefault();
+  //  console.log('Cart has ' + cart.length + ' item(s).');
+  console.log("You have " + cart.length + " items in the cart: [" + cart.join(", ") + ']')
+
+}

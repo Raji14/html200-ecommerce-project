@@ -401,6 +401,7 @@ input-checkbox {
   padding: .25rem;
   color: #333;
   font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .dressmodule a img {
@@ -408,10 +409,15 @@ input-checkbox {
   align-content: center;
 }
 
+.add-removeimg {
+  float: right;
+  cursor: pointer;
+}
+
 .swatch {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 60%;
 }
 
 .activeswatch {

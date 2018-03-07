@@ -17,7 +17,6 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="https://use.fontawesome.com/bef7ad5d00.js"></script>
-  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -66,7 +65,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="signin.html">Sign Up</a></li>
-          <li><a href="">Cart (0)</a></li>
+          <li><a href="" onclick="itemsInCart()">Cart</a></li>
         </ul>
       </div>
     </div>
@@ -233,248 +232,262 @@
         </section>
 
         <!--        Dress Image Section-->
-        <section class="equalHMWrap eqWrap">
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/100406241.jpg" alt="dress1"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="red"></section>
+        <form name="aForm">
+          <section class="equalHMWrap eqWrap">
+            <section class="equalHM eq">
+              <section class="dressmodule">
+                <img src="images/plus.png" alt="Add|Remove" class="add-removeimg product-cart-adder" data-product-id="Morgan & Co Lace Gown">
+                <a href="dress1.html"><img src="images/100406241.jpg" alt="dress1"></a>
+
+                <section class="swatch">
+                  <section class="activeswatch">
+                    <section class="red"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="black"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="blue"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="green"></section>
+                  </section>
                 </section>
-                <section class="inactiveswatch">
-                  <section class="black"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="blue"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="green"></section>
+                <a href="dress1.html">
+                  <h5 class="dressmodule-h5">Morgan & Co Lace Gown</h5>
+                </a>
+                <p class="dressmodule-p">$98.00</p>
+
+
+                <section class="rating">
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star-half-o ratingyellow"></i><a href="dress1.html">(24)</a>
                 </section>
               </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Morgan & Co Lace Gown</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star-half-o ratingyellow"></i><a href="dress1.html">(24)</a>
+            </section>
+            <section class="equalHM eq">
+              <section class="dressmodule">
+                <a href="dress1.html"><img src="images/101032102.jpg" alt="dress2"></a>
+                <img src="images/plus.png" alt="Add|Remove" class="add-removeimg product-cart-adder" data-product-id="Bardot Solange' Off the Shoulder Midi Dress">
+                <section class="swatch">
+                  <section class="activeswatch">
+                    <section class="nude"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="pink"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="orange"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="red2"></section>
+                  </section>
+                </section>
+                <a href="dress1.html">
+                  <h5 class="dressmodule-h5">Bardot 'Solange' Off the Shoulder Midi Dress</h5>
+                </a>
+                <p class="dressmodule-p">$119.00</p>
+
+                <section class="rating">
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(178)</a>
+                </section>
+              </section>
+            </section>
+            <section class="equalHM eq">
+              <section class="dressmodule">
+                <a href="dress1.html"><img src="images/101226013.jpg" alt="dress3"></a>
+                <img src="images/plus.png" alt="Add|Remove" class="add-removeimg product-cart-adder" data-product-id="Chelsea Off the Shoulder Dress">
+                <section class="swatch">
+                  <section class="activeswatch">
+                    <section class="red2"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="orange"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="nude"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="blue2"></section>
+                  </section>
+                </section>
+                <a href="dress1.html">
+                  <h5 class="dressmodule-h5">Chelsea Off the Shoulder Dress</h5>
+                </a>
+                <p class="dressmodule-p">$98.00</p>
+                <section class="rating">
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(21)</a>
+                </section>
+              </section>
+            </section>
+            <section class="equalHM eq">
+              <section class="dressmodule">
+                <a href="dress1.html"><img src="images/101592118.jpg" alt="dress4"></a>
+                <img src="images/plus.png" alt="Add|Remove" class="add-removeimg product-cart-adder" data-product-id="Eliza Fit & Flare Sweater Dress">
+                <section class="swatch">
+                  <section class="activeswatch">
+                    <section class="black"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="orange"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="red2"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="pink"></section>
+                  </section>
+                </section>
+                <a href="dress1.html">
+                  <h5 class="dressmodule-h5">Eliza Fit & Flare Sweater Dress</h5>
+                </a>
+                <p class="dressmodule-p">$98.00</p>
+                <section class="rating">
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratinggray"></i>
+                  <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(43)</a>
+                </section>
+              </section>
+            </section>
+            <section class="equalHM eq">
+              <section class="dressmodule">
+                <a href="dress1.html"><img src="images/101277184.jpg" alt="dress5"></a>
+                <img src="images/plus.png" alt="Add|Remove" class="add-removeimg product-cart-adder" data-product-id="Andrea Fit & Flare">
+                <section class="swatch">
+                  <section class="activeswatch">
+                    <section class="peach"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="black"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="red2"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="pink"></section>
+                  </section>
+                </section>
+                <a href="dress1.html">
+                  <h5 class="dressmodule-h5">Andrea Fit & Flare</h5>
+                </a>
+                <p class="dressmodule-p">$98.00</p>
+                <section class="rating">
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratinggray"></i>
+                  <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(59)</a>
+                </section>
+              </section>
+            </section>
+            <section class="equalHM eq">
+              <section class="dressmodule">
+                <a href="dress1.html"><img src="images/101364203.jpg" alt="dress6"></a>
+                <img src="images/plus.png" alt="Add|Remove" class="add-removeimg product-cart-adder" data-product-id="Leith Ruched Body-Con Tank Dress">
+                <section class="swatch">
+                  <section class="activeswatch">
+                    <section class="nude"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="green"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="black"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="red2"></section>
+                  </section>
+                </section>
+                <a href="dress1.html">
+                  <h5 class="dressmodule-h5">Leith Ruched Body-Con Tank Dress</h5>
+                </a>
+                <p class="dressmodule-p">$119.00</p>
+                <section class="rating">
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(203)</a>
+                </section>
+              </section>
+            </section>
+            <section class="equalHM eq">
+              <section class="dressmodule">
+                <a href="dress1.html"><img src="images/101474496.jpg" alt="dress7"></a>
+                <img src="images/plus.png" alt="Add|Remove" class="add-removeimg product-cart-adder" data-product-id="Gemma Halter Lace Sheath Dress">
+                <section class="swatch">
+                  <section class="activeswatch">
+                    <section class="red"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="pink"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="nude"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="blue2"></section>
+                  </section>
+                </section>
+                <a href="dress1.html">
+                  <h5 class="dressmodule-h5">Gemma Halter Lace Sheath Dress</h5>
+                </a>
+                <p class="dressmodule-p">$98.00</p>
+                <section class="rating">
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star-half-o ratingyellow"> </i>
+                  <i class="fa fa-star fa=fw ratinggray"></i>
+                  <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(16)</a>
+                </section>
+              </section>
+            </section>
+            <section class="equalHM eq">
+              <section class="dressmodule">
+                <a href="dress1.html"><img src="images/11812548.jpg" alt="dress8"></a>
+                <img src="images/plus.png" alt="Add|Remove" class="add-removeimg product-cart-adder" data-product-id="Emery Midi Dress">
+                <section class="swatch">
+                  <section class="activeswatch">
+                    <section class="gray"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="green"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="orange"></section>
+                  </section>
+                  <section class="inactiveswatch">
+                    <section class="black"></section>
+                  </section>
+                </section>
+                <a href="dress1.html">
+                  <h5 class="dressmodule-h5">Emery Midi Dress</h5>
+                </a>
+                <p class="dressmodule-p">$98.00</p>
+                <section class="rating">
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratingyellow"></i>
+                  <i class="fa fa-star-half-o ratingyellow"></i>
+                  <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(12)</a>
+                </section>
               </section>
             </section>
           </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101032102.jpg" alt="dress2"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="nude"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="pink"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="orange"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="red2"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Bardot 'Solange' Off the Shoulder Midi Dress</h5>
-              </a>
-              <p class="dressmodule-p">$119.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(178)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101226013.jpg" alt="dress3"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="red2"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="orange"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="nude"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="blue2"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Chelsea Off the Shoulder Dress</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(21)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101592118.jpg" alt="dress4"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="black"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="orange"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="red2"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="pink"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Eliza Fit & Flare Sweater Dress</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(43)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101277184.jpg" alt="dress5"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="peach"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="black"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="red2"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="pink"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Andrea Fit & Flare</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(59)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101364203.jpg" alt="dress6"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="nude"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="green"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="black"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="red2"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Leith Ruched Body-Con Tank Dress</h5>
-              </a>
-              <p class="dressmodule-p">$119.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i><a href="dress1.html">(203)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/101474496.jpg" alt="dress7"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="red"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="pink"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="nude"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="blue2"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Gemma Halter Lace Sheath Dress</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star-half-o ratingyellow"> </i>
-                <i class="fa fa-star fa=fw ratinggray"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(16)</a>
-              </section>
-            </section>
-          </section>
-          <section class="equalHM eq">
-            <section class="dressmodule">
-              <a href="dress1.html"><img src="images/11812548.jpg" alt="dress8"></a>
-              <section class="swatch">
-                <section class="activeswatch">
-                  <section class="gray"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="green"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="orange"></section>
-                </section>
-                <section class="inactiveswatch">
-                  <section class="black"></section>
-                </section>
-              </section>
-              <a href="dress1.html">
-                <h5 class="dressmodule-h5">Emery Midi Dress</h5>
-              </a>
-              <p class="dressmodule-p">$98.00</p>
-              <section class="rating">
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratingyellow"></i>
-                <i class="fa fa-star-half-o ratingyellow"></i>
-                <i class="fa fa-star fa=fw ratinggray"></i><a href="dress1.html">(12)</a>
-              </section>
-            </section>
-          </section>
-        </section>
+        </form>
       </section>
     </section>
   </main>
@@ -578,9 +591,10 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--  <script src="js/bootstrap.min.js"></script>-->
+  <!--  <script src="js/bootstrap.min.js"></script>-->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

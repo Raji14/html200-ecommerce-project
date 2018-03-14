@@ -69,4 +69,84 @@ Lesson 09:
 Each weekly assignment will be graded independently. There will not be a final grade for the entire project.
 
 ## Testing
-[update this section with information about the testing steps you took to ensure site quality]
+STEP 1: 
+
+Used the website audience classification tool to document the different audience attributes and their relevant impact (Added the updated websiteaudienceclassificationtool.doc document to the gh-pages repo). 
+Based on this exercise, deduced the following:
+[1] Audience with the highest impact - Adults and teenagers, mostly female
+[2] Device they will use mostly - PC, smartphones
+[3] User's location will have medium/low impact
+[4] Importance of showing the right content to the user would have a high impact
+
+STEP 2:
+
+Researched a couple of sites to gather data on the most commonly used breakpoints and data on most popular devices. These articles were pretty useful.
+- https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
+- https://www.w3schools.com/browsers/browsers_display.asp
+- http://www.pewinternet.org/2015/10/29/the-demographics-of-device-ownership/
+
+These sites provided information on the most popular smartphones in 2017 
+- https://deviceatlas.com/blog/most-popular-smartphones-2017
+- https://www.statista.com/statistics/716302/cell-phone-brands-commonly-owned-by-us-consumers/
+
+STEP 3:
+
+Used the http://responsivedesignchecker.com website to check how the website displays on various screens.
+Based on the research, arrived at the following popular resolutions to test for:
+[1] 1366x768 
+    Result - Website looks fine, and exactly as designed.
+[2] 1920x1080
+    Result - Website appears as desired. Image and text scales as desired.
+[3] 1280x1024
+    Result - This resolution was not an option on the website, could not test.
+
+Popular devices to test for: 
+[1] iPhone 6/6S/7
+    Result - Index and dresses page appears fine, but some text wrapping occurs in the signup page.
+[2] iPhone 6s Plus/7 Plus
+    Result - Index and dresses page appears fine, but some text wrapping occurs in the signup page.
+[3] Samsung Galaxy S7
+    Result - Index and dresses page appears fine, but some text wrapping occurs in the signup page.
+
+STEP 4:
+Ran the web page performance test at https://www.webpagetest.org
+Results: 
+First Byte Time       - A
+Keep-Alive Enabled    - A
+Compress Transfer     - A
+Compress Images       - B
+Cache Statis content  - F
+Effective use of CDN  - Checkmark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
